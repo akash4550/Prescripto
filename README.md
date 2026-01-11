@@ -8,9 +8,9 @@ The system includes a robust Admin Dashboard that provides centralized control o
 
 🛰️ Live Ecosystem
 
-Patient Hub: prescriipto.netlify.app
+Patient Hub: https://prescriipto.netlify.app
 
-Admin Command Center: prescriptionadmin.netlify.app
+Admin Command Center: https://prescriptionadmin.netlify.app
 
 #Key Features
 
