@@ -1,50 +1,61 @@
-"🏥Prescripto
-
-#Doctor Appointment Booking Web Application
-
-Prescripto is a production-grade healthcare orchestration platform designed to streamline the connection between patients and medical professionals. This web application allows patients to book doctor appointments online through a seamless, real-time interface. It features a high-performance frontend for browsing specialized doctors, selecting verified time slots, and processing secure payments.
-
-The system includes a robust Admin Dashboard that provides centralized control over clinical schedules, appointment tracking, and patient management. By integrating a secure payment gateway and a multi-role authentication system, Prescripto ensures a reliable and professional experience for all stakeholders in the healthcare ecosystem.
+🏥 Prescripto | Healthcare Orchestration Platform
+Prescripto is a production-grade healthcare ecosystem engineered to bridge the gap between patients and medical professionals. Unlike standard booking apps, it utilizes a triple-dashboard architecture and an atomic slot-booking engine to ensure data integrity and a seamless user experience.
 
 🛰️ Live Ecosystem
+Patient Hub: prescriipto.netlify.app
 
-Patient Hub: https://prescriipto.netlify.app
+Admin Command Center: prescriptionadmin.netlify.app
 
-Admin Command Center: https://prescriptionadmin.netlify.app
+🏗️ Technical Architecture & Impact
+1. Atomic Slot-Booking Logic
+To eliminate the risk of "double-booking" during high-traffic periods, I engineered an atomic verification engine. The system performs a real-time availability check at the database level immediately before transaction finalization, preventing race conditions.
 
-#Key Features
+2. Advanced Deployment & DevOps
+The platform is deployed as a distributed system across Netlify (Frontend) and Render (Backend).
 
-Patient Booking System: An intuitive interface where patients can filter doctors by specialty, view comprehensive profiles, and book available 30-minute appointment slots.
+SPA Persistence: Solved the common "404 Not Found" refresh error on static hosting by configuring custom redirect rules to handle the React Router lifecycle at the edge.
 
-Admin Dashboard: A powerful management suite for administrators to onboard new doctors, monitor system-wide appointments, and update booking statuses in real-time.
+CORS & Sync: Successfully navigated complex cross-origin resource sharing (CORS) and environment synchronization challenges between disparate hosting providers.
 
-Doctor Dashboard: A specialized view for medical professionals to track their scheduled consultations, manage their availability, and view total earnings.
+3. Multi-Role RBAC (Role-Based Access Control)
+Implemented a granular security model using JWT and Bcrypt, providing distinct, isolated environments for three key stakeholders:
 
-Payment Gateway Integration: Secure transaction processing using Stripe (Test Mode) to facilitate instant appointment confirmations.
+Patients: Self-service discovery, profile management, and appointment history.
 
-User Authentication: Multi-layered security using JWT and Bcrypt to provide distinct access levels for Patients, Doctors, and Administrators.
+Doctors: Consultation tracking, availability orchestration, and earnings analytics.
 
-Cloud Media Management: Integration with Cloudinary for optimized hosting and delivery of high-resolution doctor profile imagery.
+Admins: Global system oversight, provider onboarding, and appointment auditing.
 
-#Technologies
-
+🛠️ Tech Stack
 Frontend: React.js, Tailwind CSS
 
 Backend: Node.js, Express.js
 
 Database: MongoDB Atlas (Cloud)
 
-Payment Gateway: Stripe (Test Mode)
+Payment: Stripe SDK (Test Mode)
 
-Authentication: JSON Web Tokens (JWT)
+Media: Cloudinary CDN for optimized asset delivery
 
-Image Hosting: Cloudinary CDN
+🚀 Key Features
+Smart Discovery: Real-time doctor filtering by specialty and availability.
 
-#Engineering Impact
+FinTech Integration: Secure payment processing via Stripe for instant booking confirmation.
 
-Deployment Architecture: Successfully deployed as a monorepo across Netlify (Frontend/Admin) and Render (Backend), overcoming complex CORS and environment synchronization challenges.
+Real-time Analytics: Integrated dashboards for doctors to monitor their professional growth and consultation metrics.
 
-Scalability: Implemented an atomic slot-booking logic that prevents race conditions and "double-booking" errors during high-traffic periods.
+⚙️ Local Setup
+Clone the Repository:
 
-Persistence: Configured custom redirect rules to handle the React Router lifecycle on static hosting, ensuring zero "404 Not Found" errors on page refresh.
-", this is my broken readme
+Bash
+git clone https://github.com/Akshay-Lakwal/prescripto.git
+Environment Configuration:
+Create a .env in the backend directory with keys for MONGODB_URI, JWT_SECRET, STRIPE_SECRET_KEY, and CLOUDINARY credentials.
+
+Install & Run:
+
+Bash
+# For Backend
+cd backend && npm install && npm start
+# For Frontend
+cd frontend && npm install && npm run dev
