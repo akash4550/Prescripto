@@ -1,49 +1,52 @@
-🏥 Prescripto | Healthcare Orchestration Platform
-Prescripto is a production-grade healthcare ecosystem engineered to bridge the gap between patients and medical professionals. Unlike standard booking apps, it utilizes a triple-dashboard architecture and an atomic slot-booking engine to ensure data integrity and a seamless user experience.
+🏥Prescripto
+
+#Doctor Appointment Booking Web Application
+
+Prescripto is a production-grade healthcare orchestration platform designed to streamline the connection between patients and medical professionals. This web application allows patients to book doctor appointments online through a seamless, real-time interface. It features a high-performance frontend for browsing specialized doctors, selecting verified time slots, and processing secure payments.
+
+The system includes a robust Admin Dashboard that provides centralized control over clinical schedules, appointment tracking, and patient management. By integrating a secure payment gateway and a multi-role authentication system, Prescripto ensures a reliable and professional experience for all stakeholders in the healthcare ecosystem.
 
 🛰️ Live Ecosystem
-Patient Hub: prescriipto.netlify.app
 
-Admin Command Center: prescriptionadmin.netlify.app
+Patient Hub: https://prescriipto.netlify.app
 
-🏗️ Technical Architecture & Impact
-1. Atomic Slot-Booking Logic
-To eliminate the risk of "double-booking" during high-traffic periods, I engineered an atomic verification engine. The system performs a real-time availability check at the database level immediately before transaction finalization, preventing race conditions.
+Admin Command Center: https://prescriptionadmin.netlify.app
 
-2. Advanced Deployment & DevOps
-The platform is deployed as a distributed system across Netlify (Frontend) and Render (Backend).
+#Key Features
 
-SPA Persistence: Solved the common "404 Not Found" refresh error on static hosting by configuring custom redirect rules to handle the React Router lifecycle at the edge.
+Patient Booking System: An intuitive interface where patients can filter doctors by specialty, view comprehensive profiles, and book available 30-minute appointment slots.
 
-CORS & Sync: Successfully navigated complex cross-origin resource sharing (CORS) and environment synchronization challenges between disparate hosting providers.
+Admin Dashboard: A powerful management suite for administrators to onboard new doctors, monitor system-wide appointments, and update booking statuses in real-time.
 
-3. Multi-Role RBAC (Role-Based Access Control)
-Implemented a granular security model using JWT and Bcrypt, providing distinct, isolated environments for three key stakeholders:
+Doctor Dashboard: A specialized view for medical professionals to track their scheduled consultations, manage their availability, and view total earnings.
 
-Patients: Self-service discovery, profile management, and appointment history.
+Payment Gateway Integration: Secure transaction processing using Stripe (Test Mode) to facilitate instant appointment confirmations.
 
-Doctors: Consultation tracking, availability orchestration, and earnings analytics.
+User Authentication: Multi-layered security using JWT and Bcrypt to provide distinct access levels for Patients, Doctors, and Administrators.
 
-Admins: Global system oversight, provider onboarding, and appointment auditing.
+Cloud Media Management: Integration with Cloudinary for optimized hosting and delivery of high-resolution doctor profile imagery.
 
-🛠️ Tech Stack
+#Technologies
+
 Frontend: React.js, Tailwind CSS
 
 Backend: Node.js, Express.js
 
 Database: MongoDB Atlas (Cloud)
 
-Payment: Stripe SDK (Test Mode)
+Payment Gateway: Stripe (Test Mode)
 
-Media: Cloudinary CDN for optimized asset delivery
+Authentication: JSON Web Tokens (JWT)
 
-🚀 Key Features
-Smart Discovery: Real-time doctor filtering by specialty and availability.
+Image Hosting: Cloudinary CDN
 
-FinTech Integration: Secure payment processing via Stripe for instant booking confirmation.
+#Engineering Impact
 
-Real-time Analytics: Integrated dashboards for doctors to monitor their professional growth and consultation metrics.
+Deployment Architecture: Successfully deployed as a monorepo across Netlify (Frontend/Admin) and Render (Backend), overcoming complex CORS and environment synchronization challenges.
 
+Scalability: Implemented an atomic slot-booking logic that prevents race conditions and "double-booking" errors during high-traffic periods.
+
+Persistence: Configured custom redirect rules to handle the React Router lifecycle on static hosting, ensuring zero "404 Not Found" errors on page refresh.
 ⚙️ Local Setup
 Clone the Repository:
 
