@@ -60,7 +60,7 @@ The platform operates across **three distinct interfaces** — each purpose-buil
 | Interface | URL | Role |
 |-----------|-----|------|
 | 🩺 **Patient Hub** | [prescriipto.netlify.app](https://prescriipto.netlify.app) | Book appointments, manage profile, process payments |
-| 🛡️ **Admin Command Center** | [prescriptionadmin.netlify.app](https://prescriptionadmin.netlify.app) | Manage doctors, monitor system, control appointments |
+| 🛡️ **Admin Command Center** | [prescriptionadmin.netlify.app](https://prescriptionadmin.netlify.app) | {Manage doctors, monitor system by admin}, {control appointments by doctors} |
 | ⚙️ **Backend API** | Hosted on Render | RESTful API serving all clients |
 
 ---
