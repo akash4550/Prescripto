@@ -22,7 +22,7 @@
 <br />
 
 [![Patient Portal](https://img.shields.io/badge/🌐%20Patient%20Portal-Live-success?style=for-the-badge)](https://prescriipto.netlify.app)
-[![Admin Dashboard](https://img.shields.io/badge/⚙️%20Admin%20Dashboard-Live-success?style=for-the-badge)](https://prescriptionadmin.netlify.app)
+[![Admin & Doctor Dashboard](https://img.shields.io/badge/⚙️%20Admin%20Dashboard-Live-success?style=for-the-badge)](https://prescriptionadmin.netlify.app)
 
 <br />
 
