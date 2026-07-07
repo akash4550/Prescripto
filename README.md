@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Status-Live%20%26%20Production%20Ready-brightgreen?style=for-the-badge&logo=checkmarx" />
 <img src="https://img.shields.io/badge/Stack-MERN-61DAFB?style=for-the-badge&logo=mongodb" />
-<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+
 
 <br /><br />
 
