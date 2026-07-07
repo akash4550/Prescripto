@@ -319,18 +319,4 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-
-**Built with ❤️ for better healthcare access**
-
-[![Patient Portal](https://img.shields.io/badge/🌐%20Try%20It%20Now-Patient%20Portal-success?style=for-the-badge)](https://prescriipto.netlify.app)
-
-*If this project helped you, consider giving it a ⭐ on GitHub!*
-
-</div>
